@@ -49,3 +49,28 @@
   422  docker-compose rm
   423  ls
 ```
+
+```
+430  ls
+  431  mkdir 03-Petclinic-Deploy
+  432  ls
+  433  cd 03-Petclinic-Deploy/
+  434  ls
+  435  cp -rf ../../04-Docker/01-Dockerfile/tomcat/Dockerfile .
+  436  ls
+  437  cp -rf /root/.jenkins/workspace/Petclinic-Pipeline-as-code/03-App-Code/petclinic-code/target/petclinic.war .
+  438  ls
+  439  du -sh *
+  440  ls
+  441  vim docker-compose.yaml
+  442  ls
+  443  docker-compose up -d --build
+  444  docker-compose ps
+  445  docker-compose stop
+  446  docker-compose rm
+  447  ls
+  448  > petclinic.war
+  449  du -sh *
+  450  cd ..
+  451  ls
+```
