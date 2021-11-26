@@ -20,3 +20,32 @@
   380  cd ..
   381  ls
 ```
+
+```
+398  cd 02-Multi-App/
+  399  ls
+  400  vim docker-compose.yaml
+  401  docker images
+  402  vim docker-compose.yaml
+  403  docker images
+  404  vim docker-compose.yaml
+  405  ls
+  406  docker ps
+  407  cd ..
+  408  ls
+  409  cd 01-Nginx/
+  410  ls
+  411  docker-compose ps
+  412  docker-compose stop
+  413  docker-compose rm
+  414  ls
+  415  cd ../
+  416  ls
+  417  cd 02-Multi-App/
+  418  ls
+  419  docker-compose up -d
+  420  docker-compose ps
+  421  docker-compose stop
+  422  docker-compose rm
+  423  ls
+```
