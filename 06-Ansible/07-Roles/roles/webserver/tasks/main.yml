@@ -1,8 +1,5 @@
 ---
 # tasks file for webserver
-- name: Stop Docker Service 
-  service: name=docker state=stopped
-
 - name: Install Apache Packages
   apt: name=apache2 state=present
 

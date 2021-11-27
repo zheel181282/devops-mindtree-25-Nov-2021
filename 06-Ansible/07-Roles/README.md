@@ -1,19 +1,22 @@
 ```
- 1082  cp -rf 04-Playbook-Apache 05-Templates
- 1083  ls
- 1084  cd 05-Templates/
- 1085  ls
- 1086  mkdir templates
- 1087  ls
- 1088  vim playbook.yaml
- 1089  ls
- 1090  vim templates/info.j2
- 1091  ls
- 1092  ansible-playbook playbook.yaml
- 1093  vim playbook.yaml
- 1094  ansible-playbook playbook.yaml
- 1095  ls
- 1096  vim playbook.yaml
- 1097  ansible-playbook playbook.yaml
- 1098  ansible 172.31.0.100 -m setup
+ 1200  cd 07-Roles/
+ 1201  ls
+ 1202  cat playbook.yaml
+ 1203  cat webserver.yaml
+ 1204  ls
+ 1205  cp -rf webserver.yaml tomact-role.yaml
+ 1206  ls
+ 1207  vim tomact-role.yaml
+ 1208  s
+ 1209  ls
+ 1210  rm -rf tomcat.yaml playbook.yaml
+ 1211  ls
+ 1212  mv tomact-role.yaml tomcat.yaml
+ 1213  ls
+ 1214  ansible-playbook tomcat.yaml
+ 1215  ls
+ 1216  ansible-playbook tomcat.yaml
+ 1217  vim roles/webserver/tasks/main.yml
+ 1218  ansible-playbook tomcat.yaml
+ 1219  ls
 ```
