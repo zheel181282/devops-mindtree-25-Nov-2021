@@ -1,0 +1,93 @@
+Running from: /root/jenkins.war
+webroot: $user.home/.jenkins
+2021-11-28 11:25:17.053+0000 [id=1]	INFO	org.eclipse.jetty.util.log.Log#initialized: Logging initialized @752ms to org.eclipse.jetty.util.log.JavaUtilLog
+2021-11-28 11:25:17.240+0000 [id=1]	INFO	winstone.Logger#logInternal: Beginning extraction from war file
+2021-11-28 11:25:17.285+0000 [id=1]	WARNING	o.e.j.s.handler.ContextHandler#setContextPath: Empty contextPath
+2021-11-28 11:25:17.354+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: jetty-9.4.43.v20210629; built: 2021-06-30T11:07:22.254Z; git: 526006ecfa3af7f1a27ef3a288e2bef7ea9dd7e8; jvm 1.8.0_292-8u292-b10-0ubuntu1~16.04.1-b10
+2021-11-28 11:25:17.819+0000 [id=1]	INFO	o.e.j.w.StandardDescriptorProcessor#visitServlet: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+2021-11-28 11:25:17.882+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: DefaultSessionIdManager workerName=node0
+2021-11-28 11:25:17.882+0000 [id=1]	INFO	o.e.j.s.s.DefaultSessionIdManager#doStart: No SessionScavenger set, using defaults
+2021-11-28 11:25:17.883+0000 [id=1]	INFO	o.e.j.server.session.HouseKeeper#startScavenging: node0 Scavenging every 600000ms
+2021-11-28 11:25:18.430+0000 [id=1]	INFO	hudson.WebAppMain#contextInitialized: Jenkins home directory: /root/.jenkins found at: $user.home/.jenkins
+2021-11-28 11:25:18.606+0000 [id=1]	INFO	o.e.j.s.handler.ContextHandler#doStart: Started w.@4f4c4b1a{Jenkins v2.303.3,/,file:///root/.jenkins/war/,AVAILABLE}{/root/.jenkins/war}
+2021-11-28 11:25:18.633+0000 [id=1]	INFO	o.e.j.server.AbstractConnector#doStart: Started ServerConnector@458ad742{HTTP/1.1, (http/1.1)}{0.0.0.0:9090}
+2021-11-28 11:25:18.633+0000 [id=1]	INFO	org.eclipse.jetty.server.Server#doStart: Started @2333ms
+2021-11-28 11:25:18.635+0000 [id=21]	INFO	winstone.Logger#logInternal: Winstone Servlet Engine running: controlPort=disabled
+2021-11-28 11:25:20.164+0000 [id=27]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+2021-11-28 11:25:21.087+0000 [id=26]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+2021-11-28 11:25:27.876+0000 [id=29]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+2021-11-28 11:25:27.896+0000 [id=27]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+2021-11-28 11:25:28.003+0000 [id=26]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+2021-11-28 11:25:30.374+0000 [id=27]	INFO	jenkins.InitReactorRunner$1#onAttained: System config loaded
+2021-11-28 11:25:30.484+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: System config adapted
+2021-11-28 11:25:30.501+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+2021-11-28 11:25:30.510+0000 [id=26]	INFO	jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+2021-11-28 11:25:30.541+0000 [id=42]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Download metadata
+2021-11-28 11:25:30.565+0000 [id=42]	INFO	hudson.util.Retrier#start: Attempt #1 to do the action check updates server
+2021-11-28 11:25:30.726+0000 [id=28]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+2021-11-28 11:25:30.760+0000 [id=20]	INFO	hudson.WebAppMain$3#run: Jenkins is fully up and running
+2021-11-28 11:25:42.600+0000 [id=42]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+2021-11-28 11:25:43.158+0000 [id=42]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.plugins.sonar.MsBuildSonarQubeRunnerInstaller
+2021-11-28 11:25:43.440+0000 [id=42]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.plugins.sonar.SonarRunnerInstaller
+2021-11-28 11:25:43.713+0000 [id=42]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+2021-11-28 11:25:44.003+0000 [id=42]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.plugins.gradle.GradleInstaller
+2021-11-28 11:25:45.032+0000 [id=42]	INFO	h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tools.JDKInstaller
+2021-11-28 11:25:45.032+0000 [id=42]	INFO	hudson.util.Retrier#start: Performed the action check updates server successfully at the attempt #1
+2021-11-28 11:25:45.034+0000 [id=42]	INFO	hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Download metadata. 14,488 ms
+2021-11-28 11:30:01.235+0000 [id=63]	INFO	h.triggers.SCMTrigger$Runner#run: SCM changes detected in Petclinic-Pipeline-as-code. Triggering  #19
+2021-11-28 11:30:01.257+0000 [id=62]	INFO	h.triggers.SCMTrigger$Runner#run: SCM changes detected in Petclinic-Pipeline. Triggering  #23
+2021-11-28 11:31:38.897+0000 [id=224]	INFO	o.j.p.workflow.job.WorkflowRun#finish: Petclinic-Pipeline #23 completed: SUCCESS
+2021-11-28 11:31:38.943+0000 [id=226]	INFO	h.p.sonar.SonarBuildWrapper#setUp: Injecting SonarQube environment variables using the configuration: Sonar
+2021-11-28 11:31:38.978+0000 [id=226]	INFO	h.p.sonar.SonarBuildWrapper#createLoggerDecorator: Masking SonarQube passwords
+2021-11-28 11:31:42.739+0000 [id=225]	INFO	o.j.p.workflow.job.WorkflowRun#finish: Petclinic-Pipeline-as-code #19 completed: FAILURE
+2021-11-28 11:31:42.839+0000 [id=225]	WARNING	h.p.s.client.SQProjectResolver#resolve: Error fetching project information
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:607)
+	at com.squareup.okhttp.internal.Platform.connectSocket(Platform.java:101)
+	at com.squareup.okhttp.Connection.connectSocket(Connection.java:198)
+	at com.squareup.okhttp.Connection.connect(Connection.java:172)
+	at com.squareup.okhttp.Connection.connectAndSetOwner(Connection.java:358)
+	at com.squareup.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:117)
+	at com.squareup.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:329)
+	at com.squareup.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:246)
+	at com.squareup.okhttp.Call.getResponse(Call.java:276)
+	at com.squareup.okhttp.Call$ApplicationInterceptorChain.proceed(Call.java:234)
+	at com.squareup.okhttp.Call.getResponseWithInterceptorChain(Call.java:196)
+	at com.squareup.okhttp.Call.execute(Call.java:79)
+	at org.sonarqube.ws.client.HttpConnector.doCall(HttpConnector.java:209)
+Caused: java.lang.IllegalStateException: Fail to request http://172.31.0.100:9000/api/server/version
+	at org.sonarqube.ws.client.HttpConnector.doCall(HttpConnector.java:212)
+	at org.sonarqube.ws.client.HttpConnector.get(HttpConnector.java:154)
+	at org.sonarqube.ws.client.HttpConnector.call(HttpConnector.java:143)
+	at hudson.plugins.sonar.client.HttpClient.getHttp(HttpClient.java:37)
+	at hudson.plugins.sonar.client.WsClient.getServerVersion(WsClient.java:82)
+	at hudson.plugins.sonar.client.SQProjectResolver.resolve(SQProjectResolver.java:60)
+	at hudson.plugins.sonar.action.SonarCacheAction.get(SonarCacheAction.java:76)
+	at hudson.plugins.sonar.action.SonarCacheAction.get(SonarCacheAction.java:51)
+	at hudson.plugins.sonar.action.SonarProjectActionFactory.createProjectPage(SonarProjectActionFactory.java:118)
+	at hudson.plugins.sonar.action.SonarProjectActionFactory.createFor(SonarProjectActionFactory.java:83)
+	at hudson.plugins.sonar.action.SonarProjectActionFactory.createFor(SonarProjectActionFactory.java:42)
+	at hudson.model.Actionable.createFor(Actionable.java:114)
+	at hudson.model.Actionable.getActions(Actionable.java:139)
+	at hudson.model.Job.getPermalinks(Job.java:1074)
+	at jenkins.model.PeepholePermalink$RunListenerImpl.onCompleted(PeepholePermalink.java:228)
+	at hudson.model.listeners.RunListener.fireCompleted(RunListener.java:208)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.finish(WorkflowRun.java:625)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun.access$800(WorkflowRun.java:138)
+	at org.jenkinsci.plugins.workflow.job.WorkflowRun$GraphL.onNewHead(WorkflowRun.java:1045)
+	at org.jenkinsci.plugins.workflow.cps.CpsFlowExecution.notifyListeners(CpsFlowExecution.java:1473)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$3.run(CpsThreadGroup.java:491)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$1.run(CpsVmExecutorService.java:38)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:139)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:68)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
