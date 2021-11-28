@@ -4,7 +4,7 @@ resource "aws_instance" "backend" {
   key_name          = var.key_name
   vpc_security_group_ids = [var.sg_id]
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
   }
   tags = {
     Name = "Dev-App"
@@ -22,10 +22,25 @@ resource "aws_instance" "backend" {
     inline = [
       "sudo sleep 30",
       "sudo apt-get update -y",
-      "sudo apt-get install apache2 python sshpass -y"
+      "sudo apt-get install python sshpass -y"
     ]
 
   }
 }
+
+resource "null_resource" "ansible-main" { 
+  provisioner "local-exec" {
+    command = <<EOT
+       > jenkins-ci.ini;
+       echo "[jenkins-ci]"|tee -a jenkins-ci.ini;
+       export ANSIBLE_HOST_KEY_CHECKING=False;
+       echo "${aws_instance.backend.public_ip}"|tee -a jenkins-ci.ini;
+       ansible-playbook --key-file=${var.pvt_key_name} -i jenkins-ci.ini -u ubuntu ./ansible-code/petclinic.yaml -v 
+     EOT
+  }
+  depends_on = [aws_instance.backend]
+}
+
+
 
 
